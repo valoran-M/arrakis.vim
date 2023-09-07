@@ -8,6 +8,6 @@ endif
 let g:loaded_arrkis = 1
 
 function! arrakis#test() abort
-  echo 'salut'
+  echo "salut\n sqf"
 endfunction
 
