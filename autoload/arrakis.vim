@@ -13,6 +13,10 @@ function arrakis#start()
     echo "Arrakis is already running"
   else
     let b:arrakis_started = 1
+
+    call arrakis#panels#init()
+    call arrakis#panels#open()
+
     echo "TODO\n"
   endif
 endfunction
@@ -27,4 +31,7 @@ endfunction
 " refer to b: var here.
 function arrakis#init()
   call arrakis#define_command()
+
+  " call arrakis#pannel#init()
 endfunction
+
