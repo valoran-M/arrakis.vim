@@ -70,5 +70,6 @@ function arrakis#panels#open()
   execute win_gotoid(l:main_wid)
   execute printf('silent keepjumps keepalt rightbelow sbuffer %d', l:buf_info)
   execute printf("resize %d", l:below_win_size)
+  execute win_gotoid(l:main_wid)
 endfunction
 

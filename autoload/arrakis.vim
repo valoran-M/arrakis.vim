@@ -16,6 +16,7 @@ function arrakis#start()
 
     call arrakis#panels#init()
     call arrakis#panels#open()
+    call arrakis#simulator#init()
 
     echo "TODO\n"
   endif
